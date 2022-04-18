@@ -9,7 +9,7 @@
     $variable1=1;
     $variable2=2;
     $suma=$variable1+$variable2;
-    $p1=3;
+    $p1=2;
     $p2=$p1*3-1;
     
     if ($p2 > 5) {
@@ -51,12 +51,21 @@
             break;
     }
 
-
     echo "<p>SWITCH...CASE<br>
     $variable1 + $variable2 = $suma<br>
     p1 = $p1<br>
     $Resultado_p2<br>
     $Resultado_p3<br>
+    </p>";
+
+    $tabla="Tabla de multiplicar del $p1 <br>";
+    $multi_p1;
+    for ($i=1; $i < 10 ; $i++) {
+        $multi_p1=$p1*$i;
+        $tabla=$tabla . ("$p1 * $i = $multi_p1<br>");
+    }
+    echo "<p>FOR...<br>
+    $tabla
     </p>";
     ?>
 </body>
