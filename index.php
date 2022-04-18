@@ -9,7 +9,7 @@
     $variable1=0;
     $variable2=0;
     $suma=$variable1+$variable2;
-    echo "$variable1 + $variable2 = $suma";
+    echo "<p>$variable1 + $variable2 = $suma</p>";
     ?>
 </body>
 </html>
