@@ -9,7 +9,7 @@
     $variable1=1;
     $variable2=2;
     $suma=$variable1+$variable2;
-    $p1=2;
+    $p1=1;
     $p2=$p1*3-1;
     
     if ($p2 > 5) {
@@ -58,14 +58,26 @@
     $Resultado_p3<br>
     </p>";
 
-    $tabla="Tabla de multiplicar del $p1 <br>";
+    $tabla_p1="Tabla de multiplicar del $p1 <br>";
     $multi_p1;
     for ($i=1; $i < 10 ; $i++) {
         $multi_p1=$p1*$i;
-        $tabla=$tabla . ("$p1 * $i = $multi_p1<br>");
+        $tabla_p1=$tabla_p1 . ("$p1 * $i = $multi_p1<br>");
     }
     echo "<p>FOR...<br>
-    $tabla
+    $tabla_p1
+    </p>";
+
+    $tabla_p2="Tabla de dividir del $p2 <br>";
+    $division;
+    $divisor=1;
+    while ($divisor<10) {
+        $division=$p2/$divisor;
+        $tabla_p2=$tabla_p2 . ("$p2 / $divisor = $division<br>");
+        $divisor++;
+    }
+    echo "<p>WHILE...<br>
+    $tabla_p2
     </p>";
     ?>
 </body>
