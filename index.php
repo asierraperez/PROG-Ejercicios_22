@@ -79,6 +79,14 @@
     echo "<p>WHILE...<br>
     $tabla_p2
     </p>";
+
+    $matriz=array("1","2","3","4","5","6","7","8","9","10");
+    $tabla_notas="";
+    foreach ($matriz as $nota) {
+        $tabla_notas=$tabla_notas .("Saqué un $nota en programación<br>");
+    }
+    echo "<p>FOREACH...<br>
+    $tabla_notas</p>";
     ?>
 </body>
 </html>
