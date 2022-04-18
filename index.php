@@ -12,6 +12,9 @@
     $p1=1;
     $p2=$p1*3-1;
     
+
+    //-------IF...ELSEIF...ELSE-------
+    
     if ($p2 > 5) {
         $p3=($p1+$p2)/4;
         $Resultado_p2= "p2 = $p1 * 3 - 1 = $p2";
@@ -32,6 +35,9 @@
     $Resultado_p2<br>
     $Resultado_p3<br>
     </p>";
+
+
+//-------SWITCH...CASE-------
 
     switch ($p2) {
         case ($p2 > 5):
@@ -58,6 +64,9 @@
     $Resultado_p3<br>
     </p>";
 
+
+//-------FOR...-------
+
     $tabla_p1="Tabla de multiplicar del $p1 <br>";
     $multi_p1;
     for ($i=1; $i < 10 ; $i++) {
@@ -67,6 +76,9 @@
     echo "<p>FOR...<br>
     $tabla_p1
     </p>";
+
+
+//-------WHILE...-------
 
     $tabla_p2="Tabla de dividir del $p2 <br>";
     $division;
@@ -79,6 +91,9 @@
     echo "<p>WHILE...<br>
     $tabla_p2
     </p>";
+
+
+//-------FOREACH...-------
 
     $matriz=array("1","2","3","4","5","6","7","8","9","10");
     $tabla_notas="";
